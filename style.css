@@ -253,8 +253,11 @@ body{
             width: fit-content;
         }
    } 
-   @media (max-width: 425px) {
-       .mainBar{
+   @media (max-width: 320px) {
+        body {
+            width: fit-content;
+        }
+        .mainBar{
         width: 190vw;
         margin-bottom: 0.5em;
         color: #ffff;
