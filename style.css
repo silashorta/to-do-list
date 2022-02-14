@@ -30,8 +30,7 @@ body{
 .container{
     background-image: linear-gradient(#ffffff, #e3f4fa);
     width: 100vw;
-    /*height: 100vh;*/
-    font-size: large;
+    height: 100vh;
 }
 .title {
     display: flex;
@@ -248,17 +247,9 @@ body{
     cursor: pointer;
    }
 
-    @media (max-width: 800px) {
-        .blocoPaletas{
-            width: fit-content;
-        }
-   } 
    @media (max-width: 320px) {
-        body {
-            width: fit-content;
-        }
         .mainBar{
-        width: 190vw;
+        width: 100%;
         margin-bottom: 0.5em;
         color: #ffff;
         background-image:linear-gradient(120deg, #696eff, /*#f8acff79*/#8ecef8);
