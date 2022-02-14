@@ -247,3 +247,20 @@ body{
     background-color: #f8f8f8;
     cursor: pointer;
    }
+
+    @media (max-width: 800px) {
+        .blocoPaletas{
+            width: fit-content;
+        }
+   } 
+   @media (max-width: 425px) {
+       .mainBar{
+        width: 190vw;
+        margin-bottom: 0.5em;
+        color: #ffff;
+        background-image:linear-gradient(120deg, #696eff, /*#f8acff79*/#8ecef8);
+       }
+        .blocoPaletas{
+            width: fit-content;
+        }     
+   }
