@@ -18,6 +18,8 @@
     --yellow4: #FCFCC7;
 }
 *{
+    max-width: 100%;
+    max-height: 100%;
     font-family: 'Comfortaa', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -28,9 +30,9 @@ body{
     width: 100%;
 }
 .container{
+    width: 1440px;
+    height: 1195px;
     background-image: linear-gradient(#ffffff, #e3f4fa);
-    width: 100vw;
-    height: 100vh;
 }
 .title {
     display: flex;
@@ -40,7 +42,6 @@ body{
     align-items: center;
 }
 .mainBar{
-    width: 100vw;
     display: flex;
     margin-bottom: 0.5em;
     color: #ffff;
@@ -248,13 +249,7 @@ body{
    }
 
    @media (max-width: 300px) {
-        .mainBar{
-        width: 100%;
-        margin-bottom: 0.5em;
-        color: #ffff;
-        background-image:linear-gradient(120deg, #696eff, /*#f8acff79*/#8ecef8);
-       }
         .blocoPaletas{
-            width: fit-content;
+            width: ;
         }     
    }
