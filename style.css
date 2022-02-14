@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Comfortaa:wght@500&display=swap');
+:root{
+    --blue1: #419DFF;
+    --blue2: #68B6FF;
+    --blue3: #b8e0fa;
+    --blue4: #C6DBFC;
+    --green1: #46FF40;
+    --green2: #78FF69;
+    --green3: #C4FAB9;
+    --green4: #CCFCC7;
+    --red1: #FF4040;
+    --red2: #FF6969;
+    --red3: #FAB9B9;
+    --red4: #FCC7C7;
+    --yellow1: #fff700;
+    --yellow2: #f1ee83;
+    --yellow3: #FAFAB9;
+    --yellow4: #FCFCC7;
+}
+*{
+    font-family: 'Comfortaa', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 100%;
+}
+.container{
+    background-image: linear-gradient(#ffffff, #e3f4fa);
+    width: 100vw;
+    /*height: 100vh;*/
+    font-size: large;
+}
+.title {
+    display: flex;
+    font-size: 3em;
+    font-family: 'Architects Daughter', cursive;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    align-items: center;
+}
+.mainBar{
+    width: 100vw;
+    display: flex;
+    margin-bottom: 0.5em;
+    color: #ffff;
+    background-image:linear-gradient(120deg, #696eff, /*#f8acff79*/#8ecef8);
+    justify-content: space-between;
+}
+.main{
+    display: flex;
+}
+.mainContent{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
+.blocoPaletas{
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em;
+    display: inline-block;
+    background-color: var(--blue4);
+    border: 1px solid #f8acff79;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 0.5em 0.1em #0000002a;
+}
+.paletasCores{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+.azul, .verde, .vermelho, .amarelo{
+    margin: 0 1em;
+    display: flex;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #f9defc79;
+    border-radius: 0.5em;
+}
+.azul{
+    background-color: var(--blue1);
+}
+.verde{
+    background-color: var(--green1);
+}
+.vermelho{
+    background-color: var(--red1);
+}
+.amarelo{
+    background-color: var(--yellow1);
+}
+.blocoPaletas h2 {
+    padding: 1em;
+    margin: 0.25em;
+    background-color: var(--blue1);
+    color: #fff;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.15em;
+    text-shadow: 
+               -0.5px -0.5px 0.5px #0000004f, 
+               -0.5px 0.5px 0.5px #0000004f,      
+                0.5px -0.5px 0.5px #0000004f,    
+                0.5px 0.5px 0.5px #0000004f;
+}
+.blocoPaletas i{
+    display: inline;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.digitaTexto{
+    width: 22em;
+    position: relative;
+    font-size: 17px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    margin: 0.5em 0;
+    padding: 1em 1em;
+    display: inline-block;
+    border-radius: 0.5em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    outline: none;
+}
+.digitaTexto::-webkit-input-placeholder{
+    color: #b4b4b4;
+}
+.paletas{
+    background-color: var(--blue1);
+    margin: 1em;
+    padding: 1em 1em;
+    color: #fff;
+    min-width: 3.5em;
+    height: auto;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.paletasCriadas{
+    display: flex;
+    padding: 1em 0.5em;
+    margin: 10px;
+    max-width: 27em;
+    min-width: 3.5em;
+    justify-content: space-between;
+    /*background-color: var(--blue2);*/
+    background-color: #f8fdff;
+    border-radius: 00.5em;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+.paragrafoPaletas{
+    color: #000000;
+    margin-right: 2em;
+    word-break: break-all;
+}
+.paragrafoPaletasChecked{
+    color: #00000044;
+}
+.divBotoes{
+    display: flex;
+    padding-left: 0.5em
+}
+.botaoLimpar{
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    margin-left: 0.5em;
+    display: inline-block;
+    border-radius: 0.5em;
+    transition: all .2s;
+    border: 1px solid #0000001c;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.botao {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 1em;
+    display: inline-block;
+    border-radius: 1em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+   }
+   .botao:hover, .botaoLimpar:hover,.botaoCheck:hover, .azul:hover, .verde:hover, .vermelho:hover, .amarelo:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   .botao:active, .botaoLimpar:active,b.botaoCheck:active, .azul:active, .verde:active, .vermelho:active, .amarelo:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   .botao::after, .botaoLimpar::after,.botaoCheck::after, .azul::after, .verde::after, .vermelho::after, .amarelo::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   .botao::after, .botaoLimpar::after, .botaoCheck::after {
+    background-color: #fff;
+   }
+   #limparLista{
+       margin: 0.5em;
+       padding: 1em 10em;
+   }
+   .botaoCheck{
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    display: inline-block;
+    border-radius: 0.5em;
+    transition: all .2s;
+    border: 1px solid #0000001c;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: #f8f8f8;
+    cursor: pointer;
+   }
