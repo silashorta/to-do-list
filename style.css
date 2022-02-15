@@ -245,7 +245,7 @@
     background-color: #f8f8f8;
     cursor: pointer;
    }
-   @media (max-width: 425px) {
+   @media (max-width: 320px) {
        #limparLista{
            padding: 1em 5em;
        }
